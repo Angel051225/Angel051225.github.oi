@@ -50,6 +50,62 @@ body {
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
 }
+/* Pantallas medianas (tablets) */
+@media screen and (max-width: 768px) {
+  .greetings {
+      font-size: 3.5rem;
+  }
+
+  .description {
+      font-size: 1.3rem;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media screen and (max-width: 574px) {
+  .greetings {
+      font-size: 3rem;
+      font-weight: 800;
+  }
+
+  .description {
+      font-size: 1.5rem;
+  }
+
+  .button a {
+      font-size: 1rem;
+      padding: 12px 20px;
+  }
+
+  .credits {
+      font-size: 0.8rem;
+  }
+
+  .botones {
+      padding: 12px;
+      border-radius: 50px;
+  }
+}
+
+/* Pantallas muy pequeñas (teléfonos más compactos) */
+@media screen and (max-width: 400px) {
+  .greetings {
+      font-size: 2.5rem;
+  }
+
+  .description {
+      font-size: 1rem;
+  }
+
+  .button a {
+      font-size: 0.8rem;
+      padding: 10px 15px;
+  }
+
+  .credits {
+      font-size: 0.7rem;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
