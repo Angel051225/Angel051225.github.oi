@@ -20,13 +20,19 @@ body {
   perspective: 1000px;
 }
 
+
 #lyrics {
-  font-size: 28px;
+  font-size: 24px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   position: absolute;
+  top: 50%; /* Ajusta la posición inicial */
+  left: 50%;
   margin-bottom: 20%;
+  transform: translate(-50%, -50%);
+  opacity: 0; 
   z-index: 1;
+  transition: transform 0.3s ease-out;
   font-weight: bold;
   letter-spacing: 4px;
 }
