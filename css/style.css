@@ -2,21 +2,24 @@
 
 * {
     font-family: 'Poppins', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    color: azure;
     width: 100%;
-    height: 82vh;
+    min-height: 100vh; /* Ocupa siempre el 100% de la pantalla */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Gif.gif) no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url(../img/Gif.gif) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     position: relative;
-    overflow: hidden; /* Prevents scrollbars from appearing */
+    overflow: hidden;
 }
 
 body::before {
@@ -27,7 +30,7 @@ body::before {
     width: 100%;
     height: 100%;
     background: inherit;
-    filter: blur(5px); /* Adjust blur radius as needed */
+    filter: blur(5px);
     z-index: -1;
 }
 
@@ -36,25 +39,26 @@ body::before {
 .button,
 .credits {
     color: #ffffff;
-    /* Sets text color to white */
 }
 
 .botones {
-    padding: 9px;
-    border-radius: 80px;
+    padding: 12px;
+    border-radius: 50px;
     background-color: transparent;
-    border: none;
+    border: 2px solid #0a2be9;
 }
 
 .botones a {
     background-color: #0a2be9;
-    padding: 9px;
-    border-radius: 80px;
+    padding: 12px 20px;
+    border-radius: 50px;
     text-decoration: none;
     color: #fff;
+    display: block;
 }
 
-.botones a:focus {
+.botones a:focus,
+.botones a:hover {
     background-color: rgb(50, 194, 194);
 }
 
@@ -96,12 +100,29 @@ body::before {
 .button a {
     text-decoration: none;
     font-size: 1rem;
-    color: #111;
+    color: #fff;
 }
 
+.credits {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Pantallas medianas (tablets) */
+@media screen and (max-width: 768px) {
+    .greetings {
+        font-size: 3.5rem;
+    }
+
+    .description {
+        font-size: 1.3rem;
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
 @media screen and (max-width: 574px) {
     .greetings {
-        font-size: 3rem; /* Adjust font size for smaller screens */
+        font-size: 3rem;
         font-weight: 800;
     }
 
@@ -110,6 +131,36 @@ body::before {
     }
 
     .button a {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .credits {
+        font-size: 0.8rem;
+    }
+
+    .botones {
+        padding: 12px;
+        border-radius: 50px;
+    }
+}
+
+/* Pantallas muy pequeñas (teléfonos más compactos) */
+@media screen and (max-width: 400px) {
+    .greetings {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .button a {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+
+    .credits {
+        font-size: 0.7rem;
     }
 }
