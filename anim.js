@@ -21,6 +21,8 @@ var lyricsData = [
   { text: "Se me cuida mucho mi niña", time: 97 },
   { text: "No se que mas decir😋 ", time: 104 },
   { text: "En la vida hay muchas cosas por aprender, pero si algo tengo claro es que me enamoré de ti desde la primera mirada. Es un hecho tan sutil que ni yo mismo sé en qué momento sucedió.", time: 200 },
+{ text: "Me harías el gran honor de ser parte de mi vida y me encantaría saber si me darías la oportunidad de que seas mi novia.", time: 210 },
+
 ];
 
 // Animar las letras
