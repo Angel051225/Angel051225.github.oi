@@ -20,7 +20,7 @@ var lyricsData = [
   { text: "Para mi lo eres👉​👈​", time: 91 },
   { text: "Se me cuida mucho mi niña", time: 97 },
   { text: "No se que mas decir😋 ", time: 104 },
-  { text: "En la vida hay muchas cosas por aprender, pero si algo tengo claro es que me enamoré de ti desde la primera mirada. Es un hecho tan sutil que ni yo mismo sé en qué momento sucedió.", time: 220 },
+  { text: "En la vida hay muchas cosas por aprender, pero si algo tengo claro es que me enamoré de ti desde la primera mirada. Es un hecho tan sutil que ni yo mismo sé en qué momento sucedió.", time: 200 },
 ];
 
 // Animar las letras
@@ -48,7 +48,7 @@ function updateLyrics() {
 setInterval(updateLyrics, 1000);
 
 //funcion titulo
-// Función para ocultar el título después de 216 segundos
+// Función para ocultar el título después de 195 segundos
 function ocultarTitulo() {
   var titulo = document.querySelector(".titulo");
   titulo.style.animation =
